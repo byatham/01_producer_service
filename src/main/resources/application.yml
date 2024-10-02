@@ -3,7 +3,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://172.25.96.1:8761/eureka/
+      defaultZone: http://host.docker.internal:8761/eureka/
 management:
   endpoints:
     web:
@@ -12,9 +12,9 @@ management:
   endpoint:
     prometheus:
       enabled: true
-spring:
-  boot:
-    admin:
-      client:
-        url:
-        - http://localhost:1111/   
+#spring:
+#  boot:
+#    admin:
+#      client:
+#        url:
+#        - http://localhost:1111/
