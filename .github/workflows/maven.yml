@@ -27,7 +27,6 @@ jobs:
         run: mvn clean install
       - name: Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v6
-
         with:
           image: yathambalaiah/producer_service
           tags: latest
