@@ -123,6 +123,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>producer-service</finalName>
 	</build>
 
 </project>
