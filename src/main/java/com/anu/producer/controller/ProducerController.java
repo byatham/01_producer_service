@@ -15,9 +15,8 @@ public class ProducerController {
 	@GetMapping("/getMessage/{name}")
 	public String getProducerMessage(@PathVariable("name") String name)
 	{
-		log.info("inside ProducerController:getProducerMessage");
-		log.debug("inside ProducerController:getProducerMessage");
-
+		log.info("inside ProducerController:getProducerMessage"+name);
+		log.debug("inside ProducerController:getProducerMessage"+name);
 		return "Hello "+name+" Welcome To Springboot Tutorial";
 	}
 
