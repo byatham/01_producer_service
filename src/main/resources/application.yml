@@ -3,10 +3,11 @@ server:
 
 eureka:
   instance:
-    prefer-ip-address: true  # Ensures the IP address is used to register with Eureka
+    preferIpAddress: true
+    hostname: eureka-0
   client:
-    serviceUrl:
-      defaultZone: http://host.docker.internal:8761/eureka/  # Using host.docker.internal for Eureka in Docker
+    service-url:
+      defaultZone: http://eureka-0.host.docker.internal:8761/eureka
 
 management:
   endpoints:
